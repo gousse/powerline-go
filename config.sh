@@ -1,7 +1,8 @@
 #!/bin/bash
+# https://github.com/justjanne/powerline-go
+
 function _update_ps1() {
     PS1="$(powerline-go \
-      -modules "venv,user,ssh,cwd,perms,git,hg,jobs,exit,root,vgo" \
       -error $? \
       -path-aliases \~/secwatt_deployment/gits/docker_secwatt/vault_consul=@VAULT)"
 }
